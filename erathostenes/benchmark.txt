@@ -1,0 +1,26 @@
+goos: linux
+goarch: amd64
+pkg: github.com/jcntck/erathostenes
+cpu: 13th Gen Intel(R) Core(TM) i7-13620H
+BenchmarkPrimesUpTo1e6/regular-16         	     154	   8746211 ns/op	 4224321 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/regular-16         	     142	   8814795 ns/op	 4224285 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/regular-16         	     150	   8241202 ns/op	 4224291 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/regular-16         	     146	   8536168 ns/op	 4224275 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/regular-16         	     147	   8121915 ns/op	 4224268 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/regular-16         	     141	   8522329 ns/op	 4224315 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/regular-16         	     154	   8546186 ns/op	 4224274 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/regular-16         	     153	   8449731 ns/op	 4224280 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/regular-16         	     136	   8037490 ns/op	 4224279 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/regular-16         	     153	   8877767 ns/op	 4224280 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/optimized-16       	     178	   6539501 ns/op	 4224275 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/optimized-16       	     178	   6606248 ns/op	 4224274 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/optimized-16       	     175	   6653382 ns/op	 4224274 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/optimized-16       	     187	   6628812 ns/op	 4224274 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/optimized-16       	     176	   6416334 ns/op	 4224276 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/optimized-16       	     177	   6007637 ns/op	 4224277 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/optimized-16       	     195	   6328325 ns/op	 4224277 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/optimized-16       	     189	   6745938 ns/op	 4224271 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/optimized-16       	     181	   6225625 ns/op	 4224279 B/op	      28 allocs/op
+BenchmarkPrimesUpTo1e6/optimized-16       	     189	   5932178 ns/op	 4224278 B/op	      28 allocs/op
+PASS
+ok  	github.com/jcntck/erathostenes	38.989s
