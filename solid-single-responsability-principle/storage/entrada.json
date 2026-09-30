@@ -1,0 +1,9 @@
+{
+  "id": "F-001",
+  "vendedor": "Ana",
+  "vendas": [
+    {"id": "V1", "valor_centavos": 10000, "status": "confirmada"},
+    {"id": "V2", "valor_centavos": 25000, "status": "confirmada"},
+    {"id": "V3", "valor_centavos": 8000, "status": "cancelada"}
+  ]
+}
