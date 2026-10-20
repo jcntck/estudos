@@ -9,6 +9,7 @@ Cada pasta reúne um tema e possui um README com o contexto do estudo e orienta�
 | Pasta | O que representa |
 | --- | --- |
 | [erathostenes](erathostenes/readme.md) | Estudo do Crivo de Eratóstenes em Go, com duas implementações para encontrar números primos, testes de correção e benchmarks para comparar desempenho. |
+| [solid-single-responsability-principle](solid-single-responsability-principle/readme.md) | Laboratório do Princípio da Responsabilidade Única (SRP), do SOLID, em Go: fechamento de vendas para explorar validação, cálculo de comissão, armazenamento em JSON e geração de relatório, com versões em `problema/` e `solucao/` e testes de integração. |
 
 ## Como explorar
 
