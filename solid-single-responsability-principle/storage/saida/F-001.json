@@ -1,0 +1,7 @@
+{
+ "id": "F-001",
+ "vendedor": "Ana",
+ "quantidade_vendas": 2,
+ "total_centavos": 35000,
+ "comissao_centavos": 1750
+}

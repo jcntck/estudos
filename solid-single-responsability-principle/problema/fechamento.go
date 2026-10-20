@@ -74,7 +74,7 @@ func ProcessarFechamento() {
 		os.Exit(1)
 	}
 
-	vistos := map[string]bool{}
+	vistos := map[string]struct{}{}
 	total := int64(0)
 	qtdVendas := 0
 	comissao := int64(0)
@@ -88,17 +88,15 @@ func ProcessarFechamento() {
 			fmt.Fprintln(os.Stderr, "ID já informado anteriormente:", venda.ID)
 			os.Exit(1)
 		}
-		vistos[venda.ID] = true
+		vistos[venda.ID] = struct{}{}
 
 		if venda.Status == StatusVendaConfirmada {
-			total += int64(venda.Valor)
+			total += venda.Valor
 			qtdVendas++
 		}
 	}
 
-	if total > 0 {
-		comissao = int64(float64(total) * 0.05)
-	}
+	comissao = total/100*5 + total%100*5/100
 
 	pastaDestino := *destino
 	if err := os.MkdirAll(pastaDestino, 0755); err != nil {
@@ -111,7 +109,7 @@ func ProcessarFechamento() {
 		Vendedor:   entrada.Vendedor,
 		Quantidade: qtdVendas,
 		Total:      total,
-		Comissao:   int64(comissao),
+		Comissao:   comissao,
 	}
 
 	conteudo, err := json.MarshalIndent(fechamento, "", " ")
